@@ -1,0 +1,46 @@
+.app__navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-items: flex-start;
+    background-color: white;
+    padding: 0.6rem;
+    border-bottom: transparent;
+    gap: 0.7rem;
+
+    .logo-div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        img{
+            width: 4rem;
+            height: 4rem;
+        }
+        div{
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            color: black;
+        }
+   
+    } 
+
+    .user-div{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        img{
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+        }
+
+
+    }
+}

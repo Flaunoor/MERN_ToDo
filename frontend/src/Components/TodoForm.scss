@@ -1,0 +1,173 @@
+.app__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 45rem;
+
+    gap: 2rem;
+
+    padding: 1.5rem;
+
+    border: solid 1px lightgray;
+    border-radius: 10px;
+
+    background-color: white;
+    box-shadow: 1px 1px  rgba(211, 211, 211, 0.377);
+
+}
+.app__task-input{
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    border: solid 1px lightgray;
+    border-radius: 10px;
+
+    
+    &:focus-within{
+        box-shadow: 0 0 3px 1px rgba(128, 0, 128, 0.479);
+    }
+    
+
+    input{
+        width:90% ;
+        height: 100%;
+        font-size: 15px;
+        border: none;
+        outline: none;
+    }
+    img{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+   
+}
+.app__task-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1rem;
+
+    .in-ex-select,
+    .priority-select {
+        color: purple;
+        font-size: 15px;
+        padding: 0.5rem 0.7rem;
+        border: none;
+        background-color: transparent;
+        outline: 3px purple;
+        cursor: pointer;
+    }
+
+    .priority-select {
+        border-left: 1px solid lightgray;
+    }
+
+
+    .hour-input{
+        width: 6rem;
+        font-size: 15px;
+        outline: none;
+        color: gray;
+        padding-left: 0.5rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+
+        
+        border: solid 1px lightgray;
+        border-radius: 5px;
+
+        &:focus{
+            box-shadow: 0 0 3px 1px rgba(128, 0, 128, 0.479);
+        }
+        
+        
+    }
+    .error-h{
+        width: 6rem;
+        font-size: 15px;
+        outline: none;
+        color: rgba(255, 0, 0, 0.747);
+        padding-left: 0.5rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    
+        
+        border: solid 1px rgba(255, 0, 0, 0.164);
+        border-radius: 5px;
+    
+        &:focus{
+            box-shadow: 0 0 3px 1px rgba(128, 0, 0, 0.479);
+        }
+        
+    }
+    
+}
+.app__add-button{
+    font-size: 15px;
+    padding: 0.5rem 2rem;
+
+    color: rgba(86, 27, 126, 0.986);
+    background-color: rgba(163, 14, 163, 0.164);
+
+    border: solid 1px rgba(86, 27, 126, 0.986);
+    border-radius: 5px;
+
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgba(86, 27, 126, 0.986);
+        border-color: transparent;
+        color: white;
+    }
+}
+.calendar-btn{
+    background-color: transparent;
+
+    border: none;
+    border-radius: 50%;
+
+    padding: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out all;
+
+
+    &:hover{
+        background-color: rgba(122, 120, 122, 0.116);
+        
+    }
+    img{
+        width: 2rem;
+        height: 2rem;
+        align-self: center;
+    }
+}
+.error-msg{
+    border: 1px solid rgba(255, 0, 0, 0.849);
+    background-color: rgba(255, 0, 0, 0.192);
+    color: rgba(255, 0, 0, 0.856);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.error{
+    color: red;
+    font-size: 15px;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background-color: transparent;
+    outline: 3px red;
+    cursor: pointer;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.app__login{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  
+  background-color: rgba(86, 27, 126, 0.986);
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.logo{
+   padding: 1rem;
+   margin-top: 2rem;
+   width: 10rem;
+   height: 10rem;
+   
+   img{
+    width: 100%;
+    height: 100%;
+   }
+}
+.user__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 40%;
+  border: 0.1px solid rgba(255, 255, 255, 0.479);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+h1,h4{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto";
+  color: rgba(255, 255, 255, 0.89) ;
+}
+h4{
+  color:  rgba(224, 215, 215, 0.575);
+}
+
+.user__inputField{
+  padding: 0.8rem;
+  width: 95%;
+  font-size: 14px;
+  border: none;
+  background-color: rgba(224, 215, 215, 0.425);
+  border-radius: 5px;
+  outline: none;
+  color:white;
+}
+.user__inputField::placeholder{
+  color: rgba(255, 255, 255, 0.753);
+}
+
+
+
+.user__submitButton{
+  width: 95%;
+  font-size: 14px;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 0.1px solid transparent ;
+  color: rgb(66, 46, 66);
+  background-color: rgba(255, 255, 255, 0.973);
+  transition: 0.3s all ease;
+  cursor: pointer;
+  
+}
+.user__submitButton:hover{
+  background-color: rgba(44, 44, 87, 0.096);
+  border: 0.1px solid rgba(255, 255, 255, 0.527);
+  color: white;
+}
+
+p{
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  margin-bottom: 2rem;
+
+
+  .link{
+    color: rgb(122, 122, 228);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 0.5rem;
+
+
+  }
+
+}
+.error{
+  border: 1px solid rgba(255, 0, 0, 0.849);
+  background-color: rgba(255, 0, 0, 0.192);
+  color: rgba(255, 0, 0, 0.856);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 14px;
+}
